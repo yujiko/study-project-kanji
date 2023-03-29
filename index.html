@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kanji_index.css" />
+    <script type="module" src="kanji_index.js" defer></script>
+    <title>.kanji</title>
+  </head>
+  <body>
+    <main class="css_main_form js_bounce animate">
+      <button class="css_button js_button" type="button">.getKanji</button>
+      <div class="css_kanji">
+        <p class="css_text js_text"></p>
+        <div class="css_shadow"></div>
+      </div>
+      <div class="css_submit js_submitAnimation">
+        <button type="button" class="css_button js_send">
+          <span>.check</span>
+        </button>
+        <input class="css_input js_input" type="text" placeholder="answer" />
+      </div>
+    </main>
+    <aside>
+      <div class="menu-toggler">
+        <input type="checkbox" class="menu-toggler-button" />
+      </div>
+      <div class="menu">
+        <div class="css_menu_wrapper">
+          <ul class="css_dropdown_content">
+            <li>
+              .n1<input
+                type="checkbox"
+                data-jlpt="1"
+                class="js_filter css_checkbox"
+              />
+            </li>
+            <li>
+              .n2<input
+                type="checkbox"
+                data-jlpt="2"
+                class="js_filter css_checkbox"
+              />
+            </li>
+            <li>
+              .n3<input
+                type="checkbox"
+                data-jlpt="3"
+                class="js_filter css_checkbox"
+              />
+            </li>
+            <li>
+              .n4<input
+                type="checkbox"
+                data-jlpt="4"
+                class="js_filter css_checkbox"
+              />
+            </li>
+            <li>
+              .n5<input
+                type="checkbox"
+                data-jlpt="5"
+                class="js_filter css_checkbox"
+              />
+            </li>
+            <li>
+              .kun reading<input
+                type="checkbox"
+                data-inputTypeJS="kun"
+                class="js_valid_input css_checkbox"
+                checked="true"
+              />
+            </li>
+            <li>
+              .on reading<input
+                type="checkbox"
+                data-inputTypeJS="on"
+                class="js_valid_input css_checkbox"
+                checked="true"
+              />
+            </li>
+            <li>
+              .meaning (english)<input
+                type="checkbox"
+                data-inputTypeJS="meaning"
+                class="js_valid_input css_checkbox"
+                checked="true"
+              />
+            </li>
+            <li>
+              .animation_off<input
+                type="checkbox"
+                class="js_animation css_checkbox"
+              />
+            </li>
+            <li>
+              .streak<input
+                type="checkbox"
+                class="js_streak css_checkbox"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="streak_container">
+        <div class="mini-container">
+          <h1 class="streak">0</h1>
+          <h2>streak</h2>
+        </div>
+        <div class="mini-container">
+          <h1 class="total">0</h1>
+          <h2>total</h2>
+        </div>
+        <button type="button" class="css_button reset">.reset</button>
+      </section>
+    </aside>
+    <!-- <div class="wrapper">
+      <header>
+        Search
+      </header>
+      <input class="js_search css_input" type="text">
+      <button class="js_sbutton css_button css_filters">.search</button>
+        <div class="results"></div>
+      </div>
+    </div> -->
+  </body>
+</html>
